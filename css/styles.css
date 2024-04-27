@@ -1,0 +1,162 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Body Styles */
+body {
+  background-color: #090e22; /* Set background color */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 100vh; /* Ensure full viewport height */
+  color: #fff; /* Set text color */
+}
+
+/* Utility Class */
+.hide {
+  display: none !important; /* Hide elements with this class */
+}
+
+/* Container Styles */
+.container {
+  min-width: 400px; /* Set minimum width */
+  min-height: 400px; /* Set minimum height */
+  background-color: #1d1e33; /* Set background color */
+  padding: 2rem; /* Add padding */
+}
+
+/* IMC Form Styles */
+#calc-container h2 {
+  text-align: center; /* Center text */
+  margin-bottom: 2rem; /* Add bottom margin */
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column; /* Arrange inputs vertically */
+  justify-content: space-between; /* Add space between inputs */
+}
+
+.form-control {
+  display: flex;
+  flex: 1; /* Expand to fill available space */
+  flex-direction: column; /* Arrange label and input vertically */
+  margin-bottom: 1rem; /* Add bottom margin */
+}
+
+.form-control label {
+  font-weight: bold; /* Set label font weight */
+  margin-bottom: 0.6rem; /* Add bottom margin */
+  color: #ccc; /* Set label color */
+}
+
+.form-control input {
+  padding: 1rem 0.5rem; /* Add padding */
+}
+
+.action-control {
+  display: flex; /* Arrange buttons horizontally */
+  justify-content: space-between; /* Add space between buttons */
+  margin-top: 2rem; /* Add top margin */
+  gap: 1rem; /* Set gap between buttons */
+}
+
+/* Button Styles */
+button {
+  text-transform: uppercase; /* Convert text to uppercase */
+  padding: 1rem 1.5rem; /* Add padding */
+  background-color: #f44236; /* Set background color */
+  border: none; /* Remove border */
+  color: #fff; /* Set text color */
+  cursor: pointer; /* Set cursor to pointer */
+  opacity: 0.9; /* Set initial opacity */
+  flex: 1; /* Expand to fill available space */
+}
+
+button:hover {
+  opacity: 1; /* Set opacity to 1 on hover */
+}
+
+#clear-btn {
+  background-color: #444; /* Set background color for clear button */
+}
+
+/* Result Container Styles */
+#result-container {
+  text-align: center; /* Center text */
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+}
+
+#imc-number {
+  font-size: 2.4rem; /* Set font size */
+  margin-bottom: 0.6rem; /* Add bottom margin */
+}
+
+#imc-info {
+  font-size: 1.4rem; /* Set font size */
+  color: #ccc; /* Set text color */
+}
+
+#result-container h3 {
+  margin-top: 1rem; /* Add top margin */
+  color: #dfdfdf; /* Set text color */
+}
+
+#imc-table {
+  margin: 1.5rem 0; /* Add margin */
+  font-size: 0.8rem; /* Set font size */
+}
+
+/* Table Styles */
+.table-header {
+  font-weight: bold; /* Set font weight */
+  color: #ccc; /* Set text color */
+}
+
+.table-header,
+.table-data {
+  display: flex; /* Arrange table rows horizontally */
+  justify-content: space-between; /* Add space between table columns */
+  margin-bottom: 0.5rem; /* Add bottom margin */
+  padding-bottom: 0.5rem; /* Add bottom padding */
+  border-bottom: 1px solid #444; /* Add bottom border */
+  text-align: center; /* Center text */
+}
+
+.table-header h4,
+.table-data p {
+  flex: 1; /* Expand to fill available space */
+}
+
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3) {
+  max-width: 80px; /* Set maximum width for third column */
+}
+
+/* Back Button Styles */
+#back-btn {
+  align-self: center; /* Center button horizontally */
+}
+
+/* BMI Classification Colors */
+.good {
+  color: #12db34; /* Green color */
+}
+
+.low {
+  color: #dbce12; /* Yellow color */
+}
+
+.medium {
+  color: #db6212; /* Orange color */
+}
+
+.high {
+  color: #db1912; /* Red color */
+}

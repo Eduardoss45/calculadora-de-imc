@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Linking to external CSS file -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="calc-container">
+        <!-- Container for BMI calculator -->
+        <h2>Calculadora de IMC</h2>
+        <!-- Title -->
+        <form id="imc-form">
+          <!-- Form for inputting height and weight -->
+          <div class="form-inputs">
+            <div class="form-control">
+              <label for="height">Altura:</label>
+              <input
+                type="text"
+                name="height"
+                id="height"
+                placeholder="Exemplo 1,75"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="weight">Peso:</label>
+              <input
+                type="text"
+                name="weight"
+                id="weight"
+                placeholder="Exemplo 70,5"
+              />
+            </div>
+          </div>
+          <div class="action-control">
+            <button id="calc-btn">Calcular</button>
+            <!-- Button to calculate BMI -->
+            <button id="clear-btn">Limpar</button>
+            <!-- Button to clear inputs -->
+          </div>
+        </form>
+      </div>
+      <div id="result-container" class="hide">
+        <!-- Container for displaying BMI result -->
+        <p id="imc-number">Seu IMC: <span></span></p>
+        <!-- Displaying calculated BMI -->
+        <p id="imc-info">Situação atual: <span></span></p>
+        <!-- Displaying BMI classification -->
+        <h3>Confira as classificações</h3>
+        <!-- Heading for BMI classifications -->
+        <div id="imc-table">
+          <!-- Container for BMI classifications table -->
+          <div class="table-header">
+            <h4>IMC</h4>
+            <!-- Table header for BMI -->
+            <h4>Classificação</h4>
+            <!-- Table header for BMI classification -->
+            <h4>Obesidade</h4>
+            <!-- Table header for obesity classification -->
+          </div>
+        </div>
+        <button id="back-btn">Voltar</button>
+        <!-- Button to go back to input form -->
+      </div>
+    </div>
+    <script src="./js/scripts.js" defer></script>
+    <!-- Linking to external JavaScript file -->
+  </body>
+</html>
