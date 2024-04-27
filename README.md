@@ -16,7 +16,7 @@ To run the BMI Calculator locally, follow these steps:
 1. Clone this repository:
 
     ```
-    git clone https://github.com/Eduardoss45/calculadoradeimc.git
+    git clone https://github.com/Eduardoss45/calculadora-de-imc.git
     ```
 
 2. Open the `index.html` file in your web browser.
